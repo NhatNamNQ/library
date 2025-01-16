@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --body: #93c5fd;
+    --book-container: #e0e2e7;
+    --header: #60a5fa;
+    --font: #282a33;
+    --add-button: #affca0;
+    --add-button-hover: #91e680;
+    --add-button-active: #89d57a;
+    --remove-button: #da9797;
+    --remove-button-hover: #c98686;
+    --remove-button-active: #b87575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    background-color: var(--body);
+    font-size: 2rem;
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h3 {
+    line-height: 1.2;
+}
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.main-header {
+    background-color: var(--header);
+    color: white;
+    padding: 2rem;
+}
+
+.page-title {
+    margin-top: 1rem;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+}
+
+.main-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.book-container {
+    background-color: var(--book-container);
+    padding-top: 2rem;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+    border: 2px solid var(--font);
+    font-weight: bold;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.add-button {
+    background-color: var(--add-button);
+    font-size: 6r;
+}
+
+.add-button:hover {
+    background-color: var(--add-button-hover);
+}
+
+.add-button:active {
+    background-color: var(--add-button-active);
+}
+
+.remove-button {
+    background-color: var(--remove-button);
+}
+
+.remove-button:hover {
+    background-color: #c98686;
+}
+
+.remove-button:active {
+    background-color: #da9797;
+}
